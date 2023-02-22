@@ -14,7 +14,7 @@ export default function getAnswer(name) {
     if ((answer === 'yes' && isEven(num)) || (answer === 'no' && !isEven(num))) {
       console.log('Correct!');
       correct += 1;
-    } else if ((answer === 'no' && isEven(num)) || (answer === 'yes' && !isEven(num))) {
+    } else if ((answer === 'no' && isEven(num)) || (answer === 'yes' && !isEven(num)) || (answer !== 'yes' && answer !== 'no')) {
       break;
     }
   }
