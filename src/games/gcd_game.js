@@ -17,6 +17,6 @@ function generateRoundofGcdGame() {
 }
 
 export default function playGcdGame() {
-  const rulesOfEvenGame = 'Find the greatest common divisor of given numbers.';
-  playGames(rulesOfEvenGame, generateRoundofGcdGame);
+  const rulesOfGcdGame = 'Find the greatest common divisor of given numbers.';
+  playGames(rulesOfGcdGame, generateRoundofGcdGame);
 }
