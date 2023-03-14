@@ -13,7 +13,6 @@ function generateRoundofGcdGame() {
     }
   }
   const rightAnswer = firstNumber;
-
   return [question, rightAnswer];
 }
 
