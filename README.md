@@ -7,3 +7,5 @@
 **[Демонстрационный проект игры "Проверка на четность"](https://asciinema.org/a/CXPRxNkmRDH3nkf5tiJMGvGC5)**
 
 **[Демонстрационный проект игры "Калькулятор"](https://asciinema.org/a/ZXuCHn4xgKhU55gRaF4SlChkh)**
+
+**[Демонстрационный проект игры "Наибольший общий делитель (НОД)"](https://asciinema.org/a/bbuWupvhLJfaApYDexZ7uiW6C)**
