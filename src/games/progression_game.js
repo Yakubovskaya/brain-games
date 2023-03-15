@@ -10,7 +10,7 @@ function generateRoundofProgressionGame() {
     numbers.push(i);
   }
   const hiddenNumber = numbers[indexOfHiddenNumber];
-  numbers[indexOfHiddenNumber] = '...';
+  numbers[indexOfHiddenNumber] = '..';
   strOfNumbers = numbers.join(' ');
   const question = `${strOfNumbers}`;
   const rightAnswer = hiddenNumber;
