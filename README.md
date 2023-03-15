@@ -11,3 +11,5 @@
 **[Демонстрационный проект игры "Наибольший общий делитель (НОД)"](https://asciinema.org/a/bbuWupvhLJfaApYDexZ7uiW6C)**
 
 **[Демонстрационный проект игры "Арифметическая прогрессия"](https://asciinema.org/a/PFVIgAZJasqoWUdR7xs5BbAW5)**
+
+**[Демонстрационный проект игры "Простое ли число?"](https://asciinema.org/a/vvBEj6FVQWVEAmM0PyQAlJuAb)**
