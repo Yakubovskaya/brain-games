@@ -1,15 +1,13 @@
 import getRandomIntInclusive from '../get_random_int.js';
 import playGames from '../index.js';
 
+
+
 function generateRoundofEvenGame() {
   const number = getRandomIntInclusive(1, 50);
+  const isEven = (num) => (num % 2 === 0);
   const question = `${number}`;
-  let rightAnswer;
-  if (number % 2 === 0) {
-    rightAnswer = 'yes';
-  } else {
-    rightAnswer = 'no';
-  }
+  const rightAnswer = isEven(number) ? 'yes' : 'no';
   return [question, rightAnswer];
 }
 
