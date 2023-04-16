@@ -2,22 +2,23 @@ import getRandomIntInclusive from '../get_random_int.js';
 import playGames from '../index.js';
 
 function isPrime(num) {
-  const divider = num / 2;
-  if (num <= 2 && num !== 0) {
-    return 'yes';
+  if (num < 2) {
+    return false;
   }
-  for (let i = 2; i <= divider; i += 1) {
-    if (num % i === 0) {
-      return 'no';
+  let divider = 2;
+  while (divider <= num / 2) {
+    if (num % divider === 0) {
+      return false;
     }
+    divider += 1;
   }
-  return 'yes';
+  return true;
 }
 
 function generateRoundofPrimeGame() {
   const number = getRandomIntInclusive(1, 20);
   const question = `${number}`;
-  const rightAnswer = isPrime(number);
+  const rightAnswer = isPrime(number) ? 'yes' : 'no';
   return [question, rightAnswer];
 }
 
