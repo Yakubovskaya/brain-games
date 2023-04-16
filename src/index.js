@@ -7,14 +7,14 @@ export default function playGames(rules, generator) {
   console.log(`Hello, ${userName}!`);
   console.log(rules);
   while (correct < 3) {
-    const questionAndAnswer = generator();
-    console.log(`Question: ${questionAndAnswer[0]}`);
+    const [question, rightAnswer] = generator();
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === String(questionAndAnswer[1])) {
+    if (answer === String(rightAnswer)) {
       console.log('Correct!');
       correct += 1;
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${questionAndAnswer[1]}'\nLet's try again, ${userName}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'\nLet's try again, ${userName}!`);
       break;
     }
   }
