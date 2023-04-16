@@ -1,8 +1,6 @@
 import getRandomIntInclusive from '../get_random_int.js';
 import playGames from '../index.js';
 
-
-
 function generateRoundofEvenGame() {
   const number = getRandomIntInclusive(1, 50);
   const isEven = (num) => (num % 2 === 0);
