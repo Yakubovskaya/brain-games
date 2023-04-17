@@ -7,6 +7,7 @@
 # Hello! Welcome to the Brain Games!:brain::muscle:
 
 ## **_Description:_**
+
 Brain Games is a set of five console games built on the principle of popular mobile applications for brain training. Each game asks questions that need to be answered correctly. After three correct answers, it is considered that the game is over. Incorrect answers end the game and offer to go through it again.
 
 ## **_Min specs:_**
@@ -21,37 +22,42 @@ Just clone this repository to your machine using 'git clone <ssh/url>'. Open a '
 
 ## Games:
 
-``` 
+```
 brain-calc
 ```
+
 > Arithmetic expressions that need to be calculated
 
-[![asciicast](https://asciinema.org/a/ZXuCHn4xgKhU55gRaF4SlChkh.png)](https://asciinema.org/a/ZXuCHn4xgKhU55gRaF4SlChkh)
+[![asciicast](https://asciinema.org/a/oUxM0kU4BpAMpVX3LD3TraVyN.png)](https://asciinema.org/a/oUxM0kU4BpAMpVX3LD3TraVyN)
 
-``` 
+```
 brain-progression
 ```
+
 > Search for missing numbers in a sequence of numbers
 
-[![asciicast](https://asciinema.org/a/PFVIgAZJasqoWUdR7xs5BbAW5.png)](https://asciinema.org/a/PFVIgAZJasqoWUdR7xs5BbAW5)
+[![asciicast](https://asciinema.org/a/fYjoljPuuDIR3VtTHwVRRo8LI.png)](https://asciinema.org/a/fYjoljPuuDIR3VtTHwVRRo8LI)
 
-``` 
+```
 brain-even
 ```
+
 > Definition of an even number
 
-[![asciicast](https://asciinema.org/a/CXPRxNkmRDH3nkf5tiJMGvGC5.png)](https://asciinema.org/a/CXPRxNkmRDH3nkf5tiJMGvGC5)
+[![asciicast](https://asciinema.org/a/DIHnfagEhlaMpHzB0d8RAKPYB.png)](https://asciinema.org/a/DIHnfagEhlaMpHzB0d8RAKPYB)
 
-``` 
+```
 brain-gcd
 ```
+
 > Determination of the greatest common divisor
 
-[![asciicast](https://asciinema.org/a/bbuWupvhLJfaApYDexZ7uiW6C.png)](https://asciinema.org/a/bbuWupvhLJfaApYDexZ7uiW6C)
+[![asciicast](https://asciinema.org/a/GW3PzUbNoEQntVQMVyAUrHv3e.png)](https://asciinema.org/a/GW3PzUbNoEQntVQMVyAUrHv3e)
 
-``` 
+```
 brain-prime
 ```
+
 > Definition of a prime number
 
-[![asciicast](https://asciinema.org/a/vvBEj6FVQWVEAmM0PyQAlJuAb.png)](https://asciinema.org/a/vvBEj6FVQWVEAmM0PyQAlJuAb)
+[![asciicast](https://asciinema.org/a/JQNWLYkoZ0X3SgmvjHZavfXU0.png)](https://asciinema.org/a/JQNWLYkoZ0X3SgmvjHZavfXU0)
