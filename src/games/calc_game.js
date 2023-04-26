@@ -16,8 +16,9 @@ function generateRoundofCalcGame() {
     case 3: rightAnswer = firstNum / secondNum; break;
     // no default
   }
-  return [question, rightAnswer];
+  return [question, `${rightAnswer}`];
 }
+
 export default function playCalcGame() {
   const rulesOfCalcGame = 'What is the result of the expression?';
   playGames(rulesOfCalcGame, generateRoundofCalcGame);

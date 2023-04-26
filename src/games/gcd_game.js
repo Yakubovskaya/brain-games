@@ -12,7 +12,7 @@ function generateRoundofGcdGame() {
       secondNumber -= firstNumber;
     }
   }
-  const rightAnswer = firstNumber;
+  const rightAnswer = `${firstNumber}`;
   return [question, rightAnswer];
 }
 

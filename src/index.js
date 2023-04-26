@@ -10,7 +10,7 @@ export default function playGames(rulesOfGameStr, generateGame) {
     const [question, rightAnswer] = generateGame();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === String(rightAnswer)) {
+    if (answer === rightAnswer) {
       console.log('Correct!');
       correct += 1;
     } else {

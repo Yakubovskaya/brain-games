@@ -13,7 +13,7 @@ function generateRoundofProgressionGame() {
   numbers[indexOfHiddenNumber] = '..';
   strOfNumbers = numbers.join(' ');
   const question = `${strOfNumbers}`;
-  const rightAnswer = hiddenNumber;
+  const rightAnswer = `${hiddenNumber}`;
 
   return [question, rightAnswer];
 }
