@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 
-export default function playGames(rules, generator) {
+export default function playGames(rulesOfGameStr, generateGame) {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   let correct = 0;
   console.log(`Hello, ${userName}!`);
-  console.log(rules);
+  console.log(rulesOfGameStr);
   while (correct < 3) {
-    const [question, rightAnswer] = generator();
+    const [question, rightAnswer] = generateGame();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === String(rightAnswer)) {
