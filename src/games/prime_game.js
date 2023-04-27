@@ -17,9 +17,8 @@ const isPrime = (num) => {
 
 const generateRoundofPrimeGame = () => {
   const number = getRandomIntInclusive(1, 20);
-  const question = `${number}`;
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
-  return [question, rightAnswer];
+  return [`${number}`, rightAnswer];
 };
 
 const playProgressionGame = () => {

@@ -1,19 +1,25 @@
 import getRandomIntInclusive from '../get_random_int.js';
 import playGames from '../index.js';
 
-const generateRoundofGcdGame = () => {
-  let firstNumber = getRandomIntInclusive(1, 50);
-  let secondNumber = getRandomIntInclusive(1, 50);
-  const question = `${firstNumber} ${secondNumber}`;
-  while (firstNumber !== secondNumber) {
-    if (firstNumber > secondNumber) {
-      firstNumber -= secondNumber;
+const calculateGcd = (first, second) => {
+  let firstNum = first;
+  let secondNum = second;
+  while (firstNum !== secondNum) {
+    if (firstNum > secondNum) {
+      firstNum -= secondNum;
     } else {
-      secondNumber -= firstNumber;
+      secondNum -= firstNum;
     }
   }
-  const rightAnswer = `${firstNumber}`;
-  return [question, rightAnswer];
+  return firstNum;
+};
+
+const generateRoundofGcdGame = () => {
+  const firstNumber = getRandomIntInclusive(1, 50);
+  const secondNumber = getRandomIntInclusive(1, 50);
+  const question = `${firstNumber} ${secondNumber}`;
+  const rightAnswer = calculateGcd(firstNumber, secondNumber);
+  return [question, `${rightAnswer}`];
 };
 
 const playGcdGame = () => {

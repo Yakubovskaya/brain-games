@@ -5,9 +5,8 @@ const isEven = (num) => (num % 2 === 0);
 
 const generateRoundofEvenGame = () => {
   const number = getRandomIntInclusive(1, 50);
-  const question = `${number}`;
   const rightAnswer = isEven(number) ? 'yes' : 'no';
-  return [question, rightAnswer];
+  return [`${number}`, rightAnswer];
 };
 
 const playEvenGame = () => {
