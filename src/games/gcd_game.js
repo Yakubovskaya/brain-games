@@ -1,7 +1,7 @@
 import getRandomIntInclusive from '../get_random_int.js';
 import playGames from '../index.js';
 
-function generateRoundofGcdGame() {
+const generateRoundofGcdGame = () => {
   let firstNumber = getRandomIntInclusive(1, 50);
   let secondNumber = getRandomIntInclusive(1, 50);
   const question = `${firstNumber} ${secondNumber}`;
@@ -14,9 +14,11 @@ function generateRoundofGcdGame() {
   }
   const rightAnswer = `${firstNumber}`;
   return [question, rightAnswer];
-}
+};
 
-export default function playGcdGame() {
+const playGcdGame = () => {
   const gcdGameDescription = 'Find the greatest common divisor of given numbers.';
   playGames(gcdGameDescription, generateRoundofGcdGame);
-}
+};
+
+export default playGcdGame;

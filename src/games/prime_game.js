@@ -1,7 +1,7 @@
 import getRandomIntInclusive from '../get_random_int.js';
 import playGames from '../index.js';
 
-function isPrime(num) {
+const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
@@ -13,16 +13,18 @@ function isPrime(num) {
     divider += 1;
   }
   return true;
-}
+};
 
-function generateRoundofPrimeGame() {
+const generateRoundofPrimeGame = () => {
   const number = getRandomIntInclusive(1, 20);
   const question = `${number}`;
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
   return [question, rightAnswer];
-}
+};
 
-export default function playProgressionGame() {
+const playProgressionGame = () => {
   const primeGameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no"';
   playGames(primeGameDescription, generateRoundofPrimeGame);
-}
+};
+
+export default playProgressionGame;

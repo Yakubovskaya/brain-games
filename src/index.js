@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export default function playGames(description, generateGame) {
+const playGames = (description, generateGame) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -19,4 +19,6 @@ export default function playGames(description, generateGame) {
       console.log(`Congratulations, ${userName}!`);
     }
   }
-}
+};
+
+export default playGames;

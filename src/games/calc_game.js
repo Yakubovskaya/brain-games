@@ -1,7 +1,7 @@
 import getRandomIntInclusive from '../get_random_int.js';
 import playGames from '../index.js';
 
-function generateRoundofCalcGame() {
+const generateRoundofCalcGame = () => {
   const operators = ['+', '-', '*'];
   const index = Math.floor(Math.random() * 3);
   const operator = operators[index];
@@ -17,9 +17,11 @@ function generateRoundofCalcGame() {
     // no default
   }
   return [question, `${rightAnswer}`];
-}
+};
 
-export default function playCalcGame() {
+const playCalcGame = () => {
   const calcGameDescription = 'What is the result of the expression?';
   playGames(calcGameDescription, generateRoundofCalcGame);
-}
+};
+
+export default playCalcGame;

@@ -1,7 +1,7 @@
 import getRandomIntInclusive from '../get_random_int.js';
 import playGames from '../index.js';
 
-function generateRoundofProgressionGame() {
+const generateRoundofProgressionGame = () => {
   const numbers = [];
   const step = getRandomIntInclusive(2, 5);
   const indexOfHiddenNumber = getRandomIntInclusive(0, 9);
@@ -16,9 +16,11 @@ function generateRoundofProgressionGame() {
   const rightAnswer = `${hiddenNumber}`;
 
   return [question, rightAnswer];
-}
+};
 
-export default function playProgressionGame() {
+const playProgressionGame = () => {
   const progressionGameDescription = 'What number is missing in the progression?';
   playGames(progressionGameDescription, generateRoundofProgressionGame);
-}
+};
+
+export default playProgressionGame;
