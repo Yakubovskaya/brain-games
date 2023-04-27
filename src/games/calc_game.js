@@ -20,6 +20,6 @@ function generateRoundofCalcGame() {
 }
 
 export default function playCalcGame() {
-  const rulesOfCalcGame = 'What is the result of the expression?';
-  playGames(rulesOfCalcGame, generateRoundofCalcGame);
+  const calcGameDescription = 'What is the result of the expression?';
+  playGames(calcGameDescription, generateRoundofCalcGame);
 }

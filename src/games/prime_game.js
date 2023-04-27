@@ -23,6 +23,6 @@ function generateRoundofPrimeGame() {
 }
 
 export default function playProgressionGame() {
-  const rulesOfPrimeGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';
-  playGames(rulesOfPrimeGame, generateRoundofPrimeGame);
+  const primeGameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no"';
+  playGames(primeGameDescription, generateRoundofPrimeGame);
 }

@@ -19,6 +19,6 @@ function generateRoundofProgressionGame() {
 }
 
 export default function playProgressionGame() {
-  const rulesOfProgressionGame = 'What number is missing in the progression?';
-  playGames(rulesOfProgressionGame, generateRoundofProgressionGame);
+  const progressionGameDescription = 'What number is missing in the progression?';
+  playGames(progressionGameDescription, generateRoundofProgressionGame);
 }
