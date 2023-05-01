@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import getGreetingandUserName from './greeting.js';
 
 const playGames = (description, generateGame) => {
