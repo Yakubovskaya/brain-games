@@ -1,4 +1,4 @@
-import getRandomIntInclusive from '../get_random_int.js';
+import getRandomInt from '../get_random_int.js';
 import playGames from '../index.js';
 
 const calculateGcd = (first, second) => {
@@ -15,8 +15,10 @@ const calculateGcd = (first, second) => {
 };
 
 const generateRoundofGcdGame = () => {
-  const firstNumber = getRandomIntInclusive(1, 50);
-  const secondNumber = getRandomIntInclusive(1, 50);
+  const minNum = 1;
+  const maxNum = 50;
+  const firstNumber = getRandomInt(minNum, maxNum);
+  const secondNumber = getRandomInt(minNum, maxNum);
   const question = `${firstNumber} ${secondNumber}`;
   const rightAnswer = calculateGcd(firstNumber, secondNumber);
   return [question, `${rightAnswer}`];

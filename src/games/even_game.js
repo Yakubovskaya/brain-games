@@ -1,10 +1,12 @@
-import getRandomIntInclusive from '../get_random_int.js';
+import getRandomInt from '../get_random_int.js';
 import playGames from '../index.js';
 
 const isEven = (num) => (num % 2 === 0);
 
 const generateRoundofEvenGame = () => {
-  const number = getRandomIntInclusive(1, 50);
+  const minNum = 1;
+  const maxNum = 50;
+  const number = getRandomInt(minNum, maxNum);
   const rightAnswer = isEven(number) ? 'yes' : 'no';
   return [`${number}`, rightAnswer];
 };

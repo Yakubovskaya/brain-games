@@ -1,4 +1,4 @@
-import getRandomIntInclusive from '../get_random_int.js';
+import getRandomInt from '../get_random_int.js';
 import playGames from '../index.js';
 
 const calculateExpression = (firstNum, secondNum, index) => {
@@ -17,8 +17,10 @@ const generateRoundofCalcGame = () => {
   const operators = ['+', '-', '*'];
   const index = Math.floor(Math.random() * 3);
   const operator = operators[index];
-  const firstOperand = getRandomIntInclusive(10, 20);
-  const secondOperand = getRandomIntInclusive(1, 9);
+  const minNum = 1;
+  const maxNum = 20;
+  const firstOperand = getRandomInt(minNum, maxNum);
+  const secondOperand = getRandomInt(minNum, maxNum);
   const question = `${firstOperand} ${operator} ${secondOperand}`;
   const rightAnswer = calculateExpression(firstOperand, secondOperand, index);
   return [question, `${rightAnswer}`];

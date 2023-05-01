@@ -1,4 +1,4 @@
-import getRandomIntInclusive from '../get_random_int.js';
+import getRandomInt from '../get_random_int.js';
 import playGames from '../index.js';
 
 const isPrime = (num) => {
@@ -16,7 +16,9 @@ const isPrime = (num) => {
 };
 
 const generateRoundofPrimeGame = () => {
-  const number = getRandomIntInclusive(1, 20);
+  const minNum = 1;
+  const maxNum = 20;
+  const number = getRandomInt(minNum, maxNum);
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
   return [`${number}`, rightAnswer];
 };

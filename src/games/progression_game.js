@@ -1,22 +1,28 @@
-import getRandomIntInclusive from '../get_random_int.js';
+import getRandomInt from '../get_random_int.js';
 import playGames from '../index.js';
 
 const generateProgression = () => {
   const numbers = [];
-  const step = getRandomIntInclusive(2, 5);
-  const indexOfHiddenNumber = getRandomIntInclusive(0, 9);
-  for (let i = getRandomIntInclusive(1, 20); numbers.length < 10; i += step) {
+  const stepMinNum = 2;
+  const stepMaxNum = 5;
+  const startMinNum = 1;
+  const startMaxNum = 20;
+  const step = getRandomInt(stepMinNum, stepMaxNum);
+  for (let i = getRandomInt(startMinNum, startMaxNum); numbers.length < 10; i += step) {
     numbers.push(i);
   }
-  const hiddenNumber = numbers[indexOfHiddenNumber];
-  numbers[indexOfHiddenNumber] = '..';
-  const numbersStr = numbers.join(' ');
-  return [numbersStr, hiddenNumber];
+  return numbers;
 };
 
 const generateRoundofProgressionGame = () => {
-  const [question, rightAnswer] = generateProgression();
-  return [question, `${rightAnswer}`];
+  const minNum = 0;
+  const maxNum = 9;
+  const indexOfHiddenNumber = getRandomInt(minNum, maxNum);
+  const progression = generateProgression();
+  const hiddenNumber = progression[indexOfHiddenNumber];
+  progression[indexOfHiddenNumber] = '..';
+  const progressionStr = progression.join(' ');
+  return [progressionStr, `${hiddenNumber}`];
 };
 
 const playProgressionGame = () => {
