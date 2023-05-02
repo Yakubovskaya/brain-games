@@ -1,6 +1,9 @@
 import getRandomInt from '../get_random_int.js';
 import playGames from '../index.js';
 
+const minNum = 1;
+const maxNum = 20;
+
 const isPrime = (num) => {
   if (num < 2) {
     return false;
@@ -16,8 +19,6 @@ const isPrime = (num) => {
 };
 
 const generateRoundofPrimeGame = () => {
-  const minNum = 1;
-  const maxNum = 20;
   const number = getRandomInt(minNum, maxNum);
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
   return [`${number}`, rightAnswer];

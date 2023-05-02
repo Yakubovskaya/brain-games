@@ -1,6 +1,9 @@
 import getRandomInt from '../get_random_int.js';
 import playGames from '../index.js';
 
+const minNum = 1;
+const maxNum = 50;
+
 const calculateGcd = (first, second) => {
   let firstNum = first;
   let secondNum = second;
@@ -15,8 +18,6 @@ const calculateGcd = (first, second) => {
 };
 
 const generateRoundofGcdGame = () => {
-  const minNum = 1;
-  const maxNum = 50;
   const firstNumber = getRandomInt(minNum, maxNum);
   const secondNumber = getRandomInt(minNum, maxNum);
   const question = `${firstNumber} ${secondNumber}`;
