@@ -1,28 +1,29 @@
 import getRandomInt from '../get_random_int.js';
 import playGames from '../index.js';
 
-const calculateExpression = (firstNum, secondNum, index) => {
-  let answer;
-  switch (index) {
-    case 0: answer = firstNum + secondNum; break;
-    case 1: answer = firstNum - secondNum; break;
-    case 2: answer = firstNum * secondNum; break;
-    case 3: answer = firstNum / secondNum; break;
-    // no default
+const calculateExpression = (firstNum, secondNum, operator) => {
+  switch (operator) {
+    case '+':
+      return firstNum + secondNum;
+    case '-':
+      return firstNum - secondNum;
+    case '*':
+      return firstNum * secondNum;
+    default:
+      throw new Error(`Unknown operator: ${operator}`);
   }
-  return answer;
 };
 
 const generateRoundofCalcGame = () => {
   const operators = ['+', '-', '*'];
-  const index = Math.floor(Math.random() * 3);
+  const index = Math.floor(Math.random() * operators.length);
   const operator = operators[index];
   const minNum = 1;
   const maxNum = 20;
   const firstOperand = getRandomInt(minNum, maxNum);
   const secondOperand = getRandomInt(minNum, maxNum);
   const question = `${firstOperand} ${operator} ${secondOperand}`;
-  const rightAnswer = calculateExpression(firstOperand, secondOperand, index);
+  const rightAnswer = calculateExpression(firstOperand, secondOperand, operator);
   return [question, `${rightAnswer}`];
 };
 
