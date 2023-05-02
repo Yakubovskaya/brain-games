@@ -12,12 +12,10 @@ const playGames = (description, generateGame) => {
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'\nLet's try again, ${userName}!`);
-      break;
-    }
-    if (i === 2) {
-      console.log(`Congratulations, ${userName}!`);
+      return;
     }
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default playGames;
