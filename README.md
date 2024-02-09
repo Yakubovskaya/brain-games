@@ -4,7 +4,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/bf726e305f9665a03f0c/maintainability)](https://codeclimate.com/github/Yakubovskaya/frontend-project-44/maintainability)
 
-# Hello! Welcome to the Brain Games!:brain::muscle:
+# Hello! Welcome to the Brain Games!
 
 ## **_Description:_**
 
